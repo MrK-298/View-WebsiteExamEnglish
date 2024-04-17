@@ -8,7 +8,7 @@ async function login() {
     if (password.length < 8) {
         alert('Mật khẩu phải có ít nhất 8 ký tự.');
         return;
-    }                
+    }
     fetch('http://localhost:3000/api/v1/auth/login/', {
         method: 'POST',
         headers: {
@@ -20,9 +20,11 @@ async function login() {
         return data.json()
     }).then(function (data) {
         if (data.success) {
-            document.cookie = "kento=" + data.data + "; expires=" + new Date(Date.now() + 3600 * 1000).toUTCString() + "; path=/";           
-            alert("Đăng nhập tài khoản thành công");
-            window.location.href = '../views/home.html'
+            document.cookie = "kento=" + data.data + "; expires=" + new Date(Date.now() + 3600 * 1000).toUTCString() + "; path=/";
+            if(data.role == "user"){
+                window.location.href = '../views/home.html'
+            }else
+            window.location.href = '../views/admin/home.html'
         } else {
             alert(data.data);
         }
@@ -34,7 +36,7 @@ async function login() {
     })
 }
 function isValidGmail(email) {
-    var regex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+    var regex = /^[a-zA-Z0-9._%+-]+@gmail.com$/;
     return regex.test(email);
 }
 const submitButton = document.getElementById('btn-login');
