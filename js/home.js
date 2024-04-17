@@ -24,12 +24,9 @@ window.addEventListener('load', function() {
             const loginElement = document.getElementById('login');
             const greetingElement = document.querySelector('div b');    
             greetingElement.textContent ="Xin chào " + data.data.name;
-            const profileLink = document.getElementById('profile');
             const doneExamLink = document.getElementById('exam-done');
-            profileLink.parentElement.style.display = 'block';
-            doneExamLink.parentElement.style.display = 'block';
-            profileLink.href = `../views/profile.html?username=${data.data.username}`;
-            doneExamLink.href = `../views/listexamdone.html?username=${data.data.username}`;
+            doneExamLink.style.display = 'block';
+            doneExamLink.querySelector('a').href = `../views/listexamdone.html?username=${data.data.username}`;
             logOutElement.style.display = 'block';
             loginElement.style.display = 'none'; 
         } else {

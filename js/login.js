@@ -24,7 +24,7 @@ async function login() {
             if(data.role == "user"){
                 window.location.href = '../views/home.html'
             }else
-            window.location.href = '../views/admin/home.html'
+                window.location.href = '../views/admin/home.html'
         } else {
             alert(data.data);
         }
