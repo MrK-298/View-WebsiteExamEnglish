@@ -80,7 +80,7 @@
 										<ul class="nav menu">
 											<li class="active"><a href="#">Home <i class="fas fa-chevron-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="index.html">Home Page 1</a></li>
+													<li><a href="../views/home.html">Home </a></li>
 												</ul>
 											</li>
 											<li><a href="#">Grammar </a></li>
@@ -119,7 +119,7 @@
 		
 		<!-- Slider Area -->
 		<section class="slider">
-			<div class="hero-slider">
+			<div class="hero-slider1">
 				<!-- Start Single Slider -->
 				<div class="single-slider" style="background-image:url('../images/nen.jpg')">
 					<div class="container">
@@ -348,6 +348,26 @@
 		<script src="../homejs/bootstrap.min.js"></script>
 		<!-- Main JS -->
 		<script src="../homejs/main.js"></script>
+		<script>
+			$(".hero-slider1").owlCarousel({
+			loop:true,
+			autoplay:true,
+			smartSpeed: 500,
+			autoplayTimeout:3500,
+			singleItem: true,
+			autoplayHoverPause:true,
+			items:1,
+			nav:true,
+			navText: ['<i class="fas fa-angle-left" aria-hidden="true"></i>', '<i class="fas fa-angle-right" aria-hidden="true"></i>'],
+			dots:false,
+			});
+			$.scrollUp({
+			scrollText: '<span><i class="fas fa-angle-up"></i></span>',
+			easingType: 'easeInOutExpo',
+			scrollSpeed: 900,
+			animation: 'fade'
+		}); 
+		</script>
 		<script src="../js/home.js"></script>
 		<script src="../js/logout.js"></script>
     </body>
