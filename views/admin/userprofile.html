@@ -23,7 +23,7 @@
           
             <div class="row form-group">
                 <div class="col col-md-3">
-                    <label for="text-input" class=" form-control-label">Tài khoản</label>
+                    <label for="text-input" class=" form-control-label">Họ và tên</label>
                 </div>
                 <div class="col-12 col-md-9">
                     <input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control">
@@ -41,24 +41,27 @@
             </div>
             <div class="row form-group">
                 <div class="col col-md-3">
-                    <label for="password-input" class=" form-control-label">Mật khẩu</label>
+                    <label for="password-input" class=" form-control-label">Role</label>
                 </div>
                 <div class="col-12 col-md-9">
-                    <input type="password" id="password-input" name="password-input" placeholder="Password" class="form-control">
-                    <small class="help-block form-text">Please enter a complex password</small>
+                    <select id="roleId-input" name="roleId-input" class="form-control">
+                    </select>
+                    <small class="help-block form-text">Please select a role</small>
                 </div>
+                
             </div>
         </form>
     </div>
     <div class="card-footer">
-        <button type="submit" class="btn btn-primary btn-sm">
+        <button type="button" id="submit-btn" class="btn btn-primary btn-sm">
             <i class="fa fa-dot-circle-o"></i> Submit
         </button>
-        <button type="reset" class="btn btn-danger btn-sm">
-            <i class="fa fa-ban"></i> Reset
-        </button>
+        <a href="dashboard.html" class="btn btn-danger btn-sm">
+            <i class="fa fa-ban" ></i> Cancel
+        </a>
     </div>
 </div>
 </div>
+<script src="../../dashboardjs/edituser.js"></script>
 </body>
 </html>

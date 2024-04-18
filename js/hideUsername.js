@@ -21,6 +21,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }).then(function (data) {
         if (data.success) {
             const inputElement = document.createElement('input');
+            inputElement.labels = 'username';
             inputElement.id = 'username';
             inputElement.style.display = "none";
             inputElement.value = data.data.username;
