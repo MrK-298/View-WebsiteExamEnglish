@@ -64,7 +64,7 @@
 							<div class="col-lg-3 col-md-3 col-12">
 								<!-- Start Logo -->
 								<div class="logo">
-									<a href="index.html"><img src="../images/logo1.png" alt="#"></a>
+									<a href="../views/home.html"><img src="../images/logo1.png" alt="#"></a>
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->
@@ -146,7 +146,9 @@
    			 display: flex;
    			 justify-content: space-between;
 			}
-
+			th{
+				text-align: center;
+			}
 			.table-container {
    			 width: 45%; 
 			}
@@ -163,6 +165,8 @@
     		vertical-align: middle;
 			}
 		</style>
+
+		<!-- Footer Area -->
 
 		<!-- Footer Area -->
 		<footer id="footer" class="footer ">
@@ -241,7 +245,7 @@
 				<div class="container">
 					<div class="roSw">
 						<div class="col-lg-12 col-md-12 col-12">
-						
+
 						</div>
 					</div>
 				</div>
@@ -249,10 +253,9 @@
 			<!--/ End Copyright -->
 		</footer>
 		<!--/ End Footer Area -->
+		<!--/ End Footer Area -->
 	
-
-		<!-- jquery Min JS -->
-        <script src="../homejs/jquery.min.js"></script>
+		<script src="../homejs/jquery.min.js"></script>
 		<!-- jquery Migrate JS -->
 		<script src="../homejs/jquery-migrate-3.0.0.js"></script>
 		<!-- jquery Ui JS -->
@@ -290,6 +293,27 @@
 		<!-- Bootstrap JS -->
 		<script src="../homejs/bootstrap.min.js"></script>
 		<!-- Main JS -->
+		<script src="../homejs/main.js"></script>
+		<script>
+			$(".hero-slider1").owlCarousel({
+			loop:true,
+			autoplay:true,
+			smartSpeed: 500,
+			autoplayTimeout:3500,
+			singleItem: true,
+			autoplayHoverPause:true,
+			items:1,
+			nav:true,
+			navText: ['<i class="fas fa-angle-left" aria-hidden="true"></i>', '<i class="fas fa-angle-right" aria-hidden="true"></i>'],
+			dots:false,
+			});
+			$.scrollUp({
+			scrollText: '<span><i class="fas fa-angle-up"></i></span>',
+			easingType: 'easeInOutExpo',
+			scrollSpeed: 900,
+			animation: 'fade'
+		}); 
+		</script>
 		<script src="../homejs/main.js"></script>
         <script src="../js/hideUsername.js"></script>
         <script src="../js/getListExam.js"></script>
