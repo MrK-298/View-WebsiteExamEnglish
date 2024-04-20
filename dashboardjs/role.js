@@ -15,11 +15,11 @@ window.addEventListener('DOMContentLoaded', function() {
         data.data.forEach(item => {           
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td>${count++}</td>
-                <td>${item.roleId}</td>
-                <td>${item.name}</td>
-                <td>${item.isDelete}</td>
-                <td>
+                <td style="text-align: center;">${count++}</td>
+                <td style="text-align: center;">${item.roleId}</td>
+                <td style="text-align: center;">${item.name}</td>
+                <td style="text-align: center;">${item.isDelete}</td>
+                <td style="text-align: center;">
                     ${item.isDelete ? '<a class="btn recover-btn" data-role="' + item.roleId + '">Recover</a>' : '<a class="btn delete-btn" data-role="' + item.roleId + '">Delete</a>'}
                 </td>
 

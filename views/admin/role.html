@@ -55,25 +55,27 @@
                 </div>
             </div>
             <nav class="navbar-mobile">
-                <div class="container-fluid">
-                    <ul class="navbar-mobile__list list-unstyled">
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="recover.html">
-                                <i class="fas fa-chart-bar"></i>Danh sách</a>
-                        </li>
-                        <li>
-                            <a href="newexam.html">
-                                <i class="fas fa-table"></i>Quản Lý Exam</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="far fa-check-square"></i>Forms</a>
-                        </li>
-                    </ul>
+                <div class="menu-sidebar__content js-scrollbar1">
+                    <nav class="navbar-sidebar">
+                        <ul class="list-unstyled navbar__list">
+                            <li class="active has-sub">
+                                <a class="js-arrow" href="dashboard.html">
+                                    <i class="fas fa-tachometer-alt"></i>User</a>
+                            </li>
+                            <li>
+                                <a href="recover.html">
+                                    <i class="fas fa-chart-bar"></i>Danh sách user đã xóa</a>
+                            </li>
+                            <li>
+                                <a href="newexam.html">
+                                    <i class="fas fa-table"></i>Quản Lý Exam</a>
+                            </li>
+                            <li>
+                                <a href="role.html">
+                                    <i class="far fa-check-square"></i>Role</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </nav>
         </header>
@@ -95,7 +97,7 @@
                         </li>
                         <li>
                             <a href="recover.html">
-                                <i class="fas fa-chart-bar"></i>Danh sách</a>
+                                <i class="fas fa-chart-bar"></i>Danh sách user đã xóa</a>
                         </li>
                         <li>
                             <a href="newexam.html">
@@ -128,21 +130,21 @@
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            <img src="../../Images/khoi.jpg" alt="John Doe" />
+                                            <img src="../../Images/khoi.jpg" alt="Admin" />
                                         </div>
                                         <div class="content">
-                                            <a class="js-acc-btn" href="#">john doe</a>
+                                            <a class="js-acc-btn" href="#">Admin</a>
                                         </div>
                                         <div class="account-dropdown js-dropdown">
                                             <div class="info clearfix">
                                                 <div class="image">
                                                     <a href="#">
-                                                        <img src="../../Images/khoi.jpg" alt="John Doe" />
+                                                        <img src="../../Images/khoi.jpg" alt="Admin" />
                                                     </a>
                                                 </div>
                                                 <div class="content">
                                                     <h5 class="name">
-                                                        <a href="#">john doe</a>
+                                                        <a href="#">Admin</a>
                                                     </h5>
                                                     <span class="email">johndoe@example.com</span>
                                                 </div>
@@ -180,8 +182,6 @@
                             <div class="col-md-12">
                                 <div class="overview-wrap">
                                     <h2 class="title-1">overview</h2>
-                                    <button class="au-btn au-btn-icon au-btn--blue">
-                                        <i class="zmdi zmdi-plus"></i>add item</button>
                                 </div>
                             </div>
                         </div>
@@ -192,7 +192,7 @@
                                 <div class="table-responsive table--no-card m-b-40">
                                     <table class="table table-borderless table-striped table-earning" id="list-user">
                                         <thead>
-                                            <tr>
+                                            <tr style="text-align: center;">
                                                 <th>STT</th>                                             
                                                 <th>roleId</th>
                                                 <th>roleName</th>

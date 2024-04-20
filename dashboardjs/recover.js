@@ -15,10 +15,9 @@ window.addEventListener('DOMContentLoaded', function() {
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td>${item.email}</td>
-                <td>${item.roleId}</td>
-                <td>${item.name}</td>
-                <td>
-                    <a class="btn" href="../admin/userprofile.html?username=${item.username}">Edit</a>
+                <td style="text-align: center;">${item.roleId}</td>
+                <td style="text-align: center;">${item.name}</td>
+                <td style="text-align: center;">
                     <a class="btn recover-btn" data-username="${item.username}">Recover</a>
                 </td>
             `;
@@ -47,7 +46,7 @@ function recoverUser(username,row) {
             return data.json();
         }).then(function(data) {
             if (data.success) {
-                alert("Đã lấy lại tài khoản thành công");      
+                alert("Đã khôi phục tài khoản thành công");      
                 row.parentNode.removeChild(row);    
             }
         }).catch(error => {

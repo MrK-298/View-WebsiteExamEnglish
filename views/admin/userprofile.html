@@ -13,55 +13,52 @@
     <link href="../../css/adminCSS/theme.css" rel="stylesheet" media="all">
 </head>
 <body class="animsition">
-<div class="col-lg-6">
-<div class="card">
-    <div class="card-header">
-        <strong>Thông tin</strong> tài khoản
-    </div>
-    <div class="card-body card-block">
-        <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
-          
-            <div class="row form-group">
-                <div class="col col-md-3">
-                    <label for="text-input" class=" form-control-label">Họ và tên</label>
-                </div>
-                <div class="col-12 col-md-9">
-                    <input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control">
-                    <small class="form-text text-muted">This is a help text</small>
-                </div>
+    <div >
+        <div style="margin: 0 auto; float: none; margin-top: 250px; margin-left: 600px;  margin-right: 600px;" class="card">
+            <div class="card-header">
+                <strong>Thông tin</strong> tài khoản    
             </div>
-            <div class="row form-group">
-                <div class="col col-md-3">
-                    <label for="email-input" class=" form-control-label">Email</label>
-                </div>
-                <div class="col-12 col-md-9">
-                    <input type="email" id="email-input" name="email-input" placeholder="Enter Email" class="form-control">
-                    <small class="help-block form-text">Please enter your email</small>
-                </div>
-            </div>
-            <div class="row form-group">
-                <div class="col col-md-3">
-                    <label for="password-input" class=" form-control-label">Role</label>
-                </div>
-                <div class="col-12 col-md-9">
-                    <select id="roleId-input" name="roleId-input" class="form-control">
-                    </select>
-                    <small class="help-block form-text">Please select a role</small>
-                </div>
+            <div class="card-body card-block">
+                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
                 
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="text-input" class=" form-control-label">Họ và tên</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="email-input" class=" form-control-label">Email</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <input type="email" id="email-input" name="email-input" placeholder="Enter Email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="password-input" class=" form-control-label">Role</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <select id="roleId-input" name="roleId-input" class="form-control">
+                            </select>
+                        </div>
+                        
+                    </div>
+                </form>
             </div>
-        </form>
+            <div class="card-footer">
+                <button type="button" id="submit-btn" class="btn btn-primary btn-sm">
+                    <i class="fa fa-dot-circle-o"></i> Submit
+                </button>
+                <a href="dashboard.html" class="btn btn-danger btn-sm">
+                    <i class="fa fa-ban" ></i> Cancel
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="card-footer">
-        <button type="button" id="submit-btn" class="btn btn-primary btn-sm">
-            <i class="fa fa-dot-circle-o"></i> Submit
-        </button>
-        <a href="dashboard.html" class="btn btn-danger btn-sm">
-            <i class="fa fa-ban" ></i> Cancel
-        </a>
-    </div>
-</div>
-</div>
 <script src="../../dashboardjs/edituser.js"></script>
 </body>
 </html>

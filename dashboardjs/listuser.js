@@ -15,10 +15,10 @@ window.addEventListener('DOMContentLoaded', function() {
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td>${item.email}</td>
-                <td>${item.roleId}</td>
-                <td>${item.name}</td>
-                <td>
-                    <a class="btn" href="../admin/userprofile.html?username=${item.username}">Edit</a>
+                <td style="text-align: center;">${item.roleId}</td>
+                <td style="text-align: center;">${item.name}</td>
+                <td style="text-align: center;">
+                    <a class="btn" href="../admin/userprofile.html?username=${item.username}">Edit</a> |
                     <a class="btn delete-btn" data-username="${item.username}">Delete</a>
                 </td>
             `;
