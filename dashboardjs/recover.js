@@ -11,7 +11,6 @@ window.addEventListener('DOMContentLoaded', function() {
     .then(function(data) {
         return data.json();
     }).then(function(data) {
-        console.log(data);
         data.data.forEach(item => {
             const row = document.createElement('tr');
             row.innerHTML = `

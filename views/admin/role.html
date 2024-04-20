@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+
     <!-- Fontfaces CSS-->
     <link href="../../css/adminCSS/font-face.css" rel="stylesheet" media="all">
     <link href="../../css/adminCSS/font-awesome.min.css" rel="stylesheet" media="all">
@@ -13,10 +22,13 @@
     <link href="../../css/adminCSS/bootstrap.min.css" rel="stylesheet" media="all">
 
     <!-- Vendor CSS-->
-   
-    
+    <link href="../../css/adminCSS/animsition.min.css" rel="stylesheet" media="all">
+    <link href="../../css/adminCSS/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="../../css/adminCSS/animate.css" rel="stylesheet" media="all">
+    <link href="../../css/adminCSS/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="../../css/adminCSS/slick.css" rel="stylesheet" media="all">
     <link href="../../css/adminCSS/select2.min.css" rel="stylesheet" media="all">
-    
+    <link href="../../css/adminCSS/perfect-scrollbar.css" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
     <link href="../../css/adminCSS/theme.css" rel="stylesheet" media="all">
@@ -24,184 +36,224 @@
 </head>
 
 <body class="animsition">
-<div class="col-lg-6">
-    <!-- USER DATA-->
-    <div class="user-data m-b-30">
-        <h3 class="title-3 m-b-30">
-            <i class="zmdi zmdi-account-calendar"></i>Quản lý phân quyền</h3>
-        <div class="filters m-b-45">
-            <div class="rs-select2--dark rs-select2--md m-r-10 rs-select2--border">
-                <select class="js-select2" name="property">
-                    <option selected="selected">Tất cả các quyền</option>
-                    <option value="">Admin</option>
-                    <option value="">Member</option>
-                </select>
-                <div class="dropDownSelect2"></div>
+    
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="">
+                            <img src="../../Images/logo1.png" alt="logo" />
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
             </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="recover.html">
+                                <i class="fas fa-chart-bar"></i>Danh sách</a>
+                        </li>
+                        <li>
+                            <a href="newexam.html">
+                                <i class="fas fa-table"></i>Quản Lý Exam</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-check-square"></i>Forms</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="dashboard.html">
+                    <img src="../../Images/logo1.png" alt="Cool Admin" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="active has-sub">
+                            <a class="js-arrow" href="dashboard.html">
+                                <i class="fas fa-tachometer-alt"></i>User</a>
+                        </li>
+                        <li>
+                            <a href="recover.html">
+                                <i class="fas fa-chart-bar"></i>Danh sách</a>
+                        </li>
+                        <li>
+                            <a href="newexam.html">
+                                <i class="fas fa-table"></i>Quản Lý Exam</a>
+                        </li>
+                        <li>
+                            <a href="role.html">
+                                <i class="far fa-check-square"></i>Role</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <form class="form-header" action="" method="POST">
+                                <input class="au-input au-input--xl" type="text" name="search" placeholder="Search for datas &amp; reports..." />
+                                <button class="au-btn--submit" type="submit">
+                                    <i class="zmdi zmdi-search"></i>
+                                </button>
+                            </form>
+                            <div class="header-button">
+                                <div class="account-wrap">
+                                    <div class="account-item clearfix js-item-menu">
+                                        <div class="image">
+                                            <img src="../../Images/khoi.jpg" alt="John Doe" />
+                                        </div>
+                                        <div class="content">
+                                            <a class="js-acc-btn" href="#">john doe</a>
+                                        </div>
+                                        <div class="account-dropdown js-dropdown">
+                                            <div class="info clearfix">
+                                                <div class="image">
+                                                    <a href="#">
+                                                        <img src="../../Images/khoi.jpg" alt="John Doe" />
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="name">
+                                                        <a href="#">john doe</a>
+                                                    </h5>
+                                                    <span class="email">johndoe@example.com</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="account-dropdown__body">
+                                                <div class="account-dropdown__item">
+                                                    <a href="../../views/admin/profile.html">
+                                                        <i class="zmdi zmdi-account"></i>Account</a>
+                                                </div>
+                                                <div class="account-dropdown__item">
+                                                    <a href="../../views/admin/role.html">
+                                                        <i class="zmdi zmdi-settings"></i>Setting</a>
+                                                </div>
+                                            </div>
+                                            <div class="account-dropdown__footer">
+                                                <a href="../login.html">
+                                                    <i class="zmdi zmdi-power"></i>Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">overview</h2>
+                                    <button class="au-btn au-btn-icon au-btn--blue">
+                                        <i class="zmdi zmdi-plus"></i>add item</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <h2 class="title-1 m-b-25">List Role</h2>
+                                <div class="table-responsive table--no-card m-b-40">
+                                    <table class="table table-borderless table-striped table-earning" id="list-user">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>                                             
+                                                <th>roleId</th>
+                                                <th>roleName</th>
+                                                <th>isDelete</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>                                                                    
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                               
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="au-card au-card--no-shadow au-card--no-pad m-b-40">
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    <p>Copyright © 2018 Colorlib. All rights reserved. Template by <a href="#">Colorlib</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
         </div>
-        <div class="table-responsive table-data">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <td>
-                            <label class="au-checkbox">
-                                <input type="checkbox">
-                                <span class="au-checkmark"></span>
-                            </label>
-                        </td>
-                        <td>name</td>
-                        <td>role</td>
-                        <td>type</td>
-                        <td></td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <label class="au-checkbox">
-                                <input type="checkbox">
-                                <span class="au-checkmark"></span>
-                            </label>
-                        </td>
-                        <td>
-                            <div class="table-data__info">
-                                <h6>lori lynch</h6>
-                                <span>
-                                    <a href="#">johndoe@gmail.com</a>
-                                </span>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="role admin">admin</span>
-                        </td>
-                        <td>
-                            <div class="rs-select2--trans rs-select2--sm">
-                                <select class="js-select2" name="property">
-                                    <option selected="selected">Full Control</option>
-                                    <option value="">Post</option>
-                                    <option value="">Watch</option>
-                                </select>
-                                <div class="dropDownSelect2"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="more">
-                                <i class="zmdi zmdi-more"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label class="au-checkbox">
-                                <input type="checkbox" checked="checked">
-                                <span class="au-checkmark"></span>
-                            </label>
-                        </td>
-                        <td>
-                            <div class="table-data__info">
-                                <h6>lori lynch</h6>
-                                <span>
-                                    <a href="#">johndoe@gmail.com</a>
-                                </span>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="role user">user</span>
-                        </td>
-                        <td>
-                            <div class="rs-select2--trans rs-select2--sm">
-                                <select class="js-select2" name="property">
-                                    <option value="">Full Control</option>
-                                    <option value="" selected="selected">Post</option>
-                                    <option value="">Watch</option>
-                                </select>
-                                <div class="dropDownSelect2"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="more">
-                                <i class="zmdi zmdi-more"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label class="au-checkbox">
-                                <input type="checkbox">
-                                <span class="au-checkmark"></span>
-                            </label>
-                        </td>
-                        <td>
-                            <div class="table-data__info">
-                                <h6>lori lynch</h6>
-                                <span>
-                                    <a href="#">johndoe@gmail.com</a>
-                                </span>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="role user">user</span>
-                        </td>
-                        <td>
-                            <div class="rs-select2--trans rs-select2--sm">
-                                <select class="js-select2" name="property">
-                                    <option value="">Full Control</option>
-                                    <option value="" selected="selected">Post</option>
-                                    <option value="">Watch</option>
-                                </select>
-                                <div class="dropDownSelect2"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="more">
-                                <i class="zmdi zmdi-more"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label class="au-checkbox">
-                                <input type="checkbox">
-                                <span class="au-checkmark"></span>
-                            </label>
-                        </td>
-                        <td>
-                            <div class="table-data__info">
-                                <h6>lori lynch</h6>
-                                <span>
-                                    <a href="#">johndoe@gmail.com</a>
-                                </span>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="role member">member</span>
-                        </td>
-                        <td>
-                            <div class="rs-select2--trans rs-select2--sm">
-                                <select class="js-select2" name="property">
-                                    <option selected="selected">Full Control</option>
-                                    <option value="">Post</option>
-                                    <option value="">Watch</option>
-                                </select>
-                                <div class="dropDownSelect2"></div>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="more">
-                                <i class="zmdi zmdi-more"></i>
-                            </span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+
     </div>
-</div>
-<!-- Jquery JS-->
-<script src="../../adminjs/jquery-3.2.1.min.js"></script>
-<script src="../../adminjs/animsition.min.js"></script>
-<script src="../../adminjs/select2.min.js"></script>
-<!-- Main JS-->
-<script src="../../adminjs/main.js"></script>
+
+    <!-- Jquery JS-->
+    <script src="../../adminjs/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="../../adminjs/popper.min.js"></script>
+    <script src="../../adminjs/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="../../adminjs/slick.min.js"></script>
+    <script src="../../adminjs/wow.min.js"></script>
+    <script src="../../adminjs/animsition.min.js"></script>
+    <script src="../../adminjs/bootstrap-progressbar.min.js"></script>
+    <script src="../../adminjs/jquery.waypoints.min.js"></script>
+    <script src="../../adminjs/jquery.counterup.min.js"></script>
+    <script src="../../adminjs/circle-progress.min.js"></script>
+    <script src="../../adminjs/perfect-scrollbar.js"></script>
+    <script src="../../adminjs/Chart.bundle.min.js"></script>
+    <script src="../../adminjs/select2.min.js"></script>
+
+    <!-- Main JS-->
+    <script src="../../adminjs/main.js"></script>
+    <script src="../../dashboardjs/role.js"></script>
 </body>
+
 </html>
+<!-- end document-->
