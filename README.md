@@ -11,19 +11,19 @@ img {
 # 1. UserPage
 
 ![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/loginview.jpg)
-1.1 LoginPage
+                                    1.1 LoginPage
 
 ![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/registerview.jpg)
-1.2 RegisterPage
+                                    1.2 RegisterPage
 
 ![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/forgotpwview.jpg)
-1.3 ForgotpasswordPage
+                                1.3 ForgotpasswordPage
 
 ![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/sendmailforgotpw.jpg)
-1.4 Send token resetpassword to mail
+                                1.4 Send token resetpassword to mail
 
 ![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/resetpwview.jpg)
-1.5 ResetpasswordPage
+                                    1.5 ResetpasswordPage
 
 ![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/homeview.jpg)
 1.6 HomePage
