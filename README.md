@@ -50,17 +50,47 @@ img {
 # 2. AdminrPage
 
 ![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/listuser_admin.jpg)
-2.1 ListUserPage
+2.1 ListUserPage_Admin
 
 ![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/edituser_admin.jpg)
-2.2 EditUserPage
+2.2 EditUserPage_Admin
 
 ![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/deleteuser_admin.jpg)
-2.3.1 DeleteUser
+2.3.1 DeleteUser_Admin
 
 ![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/deleteuser2_admin.jpg)
-2.3.2 DeleteUser
+2.3.2 DeleteUser_Admin
 
+![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/listdeleteuser_admin.jpg)
+2.4 ListDeleteUser_Admin
 
+![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/recoveruser_admin.jpg)
+2.5.1 RecoverUser_Admin
 
+![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/recoveruser2_admin.jpg)
+2.5.2 RecoverUser_Admin
+
+![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/listexam_admin.jpg)
+2.6 ListExam_Admin
+
+![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/deleteexam_admin.jpg)
+2.7.1 DeleteExam_Admin
+
+![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/deleteexam2_admin.jpg)
+2.7.2 DeleteExam_Admin
+
+![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/recoverexam_admin.jpg)
+2.8.1 RecoverExam_Admin
+
+![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/recoverexam2_admin.jpg)
+2.8.2 RecoverExam_Admin
+
+![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/listrole_admin.jpg)
+2.9 ListRole_Admin
+
+# Sever API for the app
+
+https://github.com/MrK-298/DoAnNodeJs
+
+# Document
 
