@@ -58,12 +58,9 @@ img {
 ![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/deleteuser_admin.jpg)
 2.3.1 DeleteUser
 
-![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/deleteuser_admin2.jpg)
+![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/deleteuser2_admin.jpg)
 2.3.2 DeleteUser
-![image]()
-![image]()
-![image]()
-![image]()
+
 
 
 
