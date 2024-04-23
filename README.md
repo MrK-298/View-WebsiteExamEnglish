@@ -1,8 +1,4 @@
-<style>
-img {
-    display: block;
-}
-</style>
+
 # English
 ## Getting Started
 ### This project helps people test English multiple choice questions
@@ -88,7 +84,7 @@ img {
 ![image](https://github.com/MrK-298/View/blob/main/Images/imagesview/listrole_admin.jpg)
 2.9 ListRole_Admin
 
-# Sever API for the app
+# Server API for the app
 
 https://github.com/MrK-298/DoAnNodeJs
 
